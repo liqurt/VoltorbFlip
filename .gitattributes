@@ -1,1 +1,1 @@
-app/build/* linguist-vendored
+app/build/generated/not_namespaced_r_class_sources/* linguist-vendored
