@@ -61,7 +61,6 @@ attr alertDialogButtonGroupStyle
 attr alertDialogCenterButtons
 attr alertDialogStyle
 attr alertDialogTheme
-attr alignmentMode
 attr allowStacking
 attr alpha
 attr alphabeticModifiers
@@ -113,8 +112,6 @@ attr colorError
 attr colorPrimary
 attr colorPrimaryDark
 attr colorSwitchThumbNormal
-attr columnCount
-attr columnOrderPreserved
 attr commitIcon
 attr constraintSet
 attr constraint_referenced_ids
@@ -127,7 +124,6 @@ attr contentInsetRight
 attr contentInsetStart
 attr contentInsetStartWithNavigation
 attr controlBackground
-attr coordinatorLayoutStyle
 attr customNavigationLayout
 attr defaultQueryHint
 attr dialogCornerRadius
@@ -183,15 +179,8 @@ attr indeterminateProgressStyle
 attr initialActivityCount
 attr isLightTheme
 attr itemPadding
-attr keylines
 attr lastBaselineToBottomHeight
 attr layout
-attr layout_anchor
-attr layout_anchorGravity
-attr layout_behavior
-attr layout_column
-attr layout_columnSpan
-attr layout_columnWeight
 attr layout_constrainedHeight
 attr layout_constrainedWidth
 attr layout_constraintBaseline_creator
@@ -233,7 +222,6 @@ attr layout_constraintWidth_default
 attr layout_constraintWidth_max
 attr layout_constraintWidth_min
 attr layout_constraintWidth_percent
-attr layout_dodgeInsetEdges
 attr layout_editor_absoluteX
 attr layout_editor_absoluteY
 attr layout_goneMarginBottom
@@ -242,13 +230,7 @@ attr layout_goneMarginLeft
 attr layout_goneMarginRight
 attr layout_goneMarginStart
 attr layout_goneMarginTop
-attr layout_gravity
-attr layout_insetEdge
-attr layout_keyline
 attr layout_optimizationLevel
-attr layout_row
-attr layout_rowSpan
-attr layout_rowWeight
 attr lineHeight
 attr listChoiceBackgroundIndicator
 attr listChoiceIndicatorMultipleAnimated
@@ -275,7 +257,6 @@ attr navigationContentDescription
 attr navigationIcon
 attr navigationMode
 attr numericModifiers
-attr orientation
 attr overlapAnchor
 attr paddingBottomNoButtons
 attr paddingEnd
@@ -296,8 +277,6 @@ attr radioButtonStyle
 attr ratingBarStyle
 attr ratingBarStyleIndicator
 attr ratingBarStyleSmall
-attr rowCount
-attr rowOrderPreserved
 attr searchHintIcon
 attr searchIcon
 attr searchViewStyle
@@ -315,7 +294,6 @@ attr spinnerStyle
 attr splitTrack
 attr srcCompat
 attr state_above_anchor
-attr statusBarBackground
 attr subMenuArrow
 attr submitBackground
 attr subtitle
@@ -368,7 +346,6 @@ attr track
 attr trackTint
 attr trackTintMode
 attr ttcIndex
-attr useDefaultMargins
 attr viewInflaterClass
 attr voiceIcon
 attr windowActionBar
@@ -556,7 +533,6 @@ dimen compat_button_padding_vertical_material
 dimen compat_control_corner_material
 dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
-dimen default_gap
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
 dimen highlight_alpha_material_colored
@@ -675,7 +651,6 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable ball
 drawable blank
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -685,6 +660,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable cell0
 drawable cell1
 drawable cell2
 drawable cell3
@@ -692,6 +668,10 @@ drawable howtoplay
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable logo
+drawable maybe0
+drawable maybe1
+drawable maybe2
+drawable maybe3
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -771,9 +751,6 @@ id actions
 id activity_chooser_view_content
 id add
 id alertTitle
-id alignBounds
-id alignMargins
-id all
 id always
 id async
 id barrier
@@ -806,15 +783,11 @@ id cell41
 id cell42
 id cell43
 id cell44
-id center
-id center_horizontal
 id center_vertical
 id chains
 id checkbox
 id checked
 id chronometer
-id clip_horizontal
-id clip_vertical
 id col0BallSum
 id col0NumSum
 id col1BallSum
@@ -828,6 +801,7 @@ id col4NumSum
 id collapseActionView
 id content
 id contentPanel
+id currentScoreText
 id custom
 id customPanel
 id decor_content_parent
@@ -840,13 +814,11 @@ id edit_query
 id end
 id expand_activities_button
 id expanded_menu
-id fill
-id fill_horizontal
-id fill_vertical
 id forever
 id gone
 id group_divider
 id groups
+id guideline
 id guideline10
 id guideline12
 id guideline242
@@ -854,10 +826,9 @@ id guideline6
 id guideline7
 id guideline8
 id guideline9
+id highScoreText
 id home
 id homeAsUp
-id horizontal
-id howtoplay
 id icon
 id icon_group
 id ifRoom
@@ -868,6 +839,7 @@ id italic
 id left
 id line1
 id line3
+id linearLayout
 id listMode
 id list_item
 id message
@@ -933,6 +905,7 @@ id start
 id submenuarrow
 id submit_area
 id tabMode
+id tableLayout2
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -945,6 +918,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView5
 id time
 id title
 id titleDividerNoCustom
@@ -955,7 +929,6 @@ id unchecked
 id uniform
 id up
 id useLogo
-id vertical
 id withText
 id wrap
 id wrap_content
@@ -1394,7 +1367,6 @@ style Widget_AppCompat_Toolbar
 style Widget_AppCompat_Toolbar_Button_Navigation
 style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
-style Widget_Support_CoordinatorLayout
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
@@ -1416,15 +1388,11 @@ styleable CompoundButton android_button buttonCompat buttonTint buttonTintMode
 styleable ConstraintLayout_Layout android_orientation android_maxWidth android_maxHeight android_minWidth android_minHeight barrierAllowsGoneWidgets barrierDirection chainUseRtl constraintSet constraint_referenced_ids layout_constrainedHeight layout_constrainedWidth layout_constraintBaseline_creator layout_constraintBaseline_toBaselineOf layout_constraintBottom_creator layout_constraintBottom_toBottomOf layout_constraintBottom_toTopOf layout_constraintCircle layout_constraintCircleAngle layout_constraintCircleRadius layout_constraintDimensionRatio layout_constraintEnd_toEndOf layout_constraintEnd_toStartOf layout_constraintGuide_begin layout_constraintGuide_end layout_constraintGuide_percent layout_constraintHeight_default layout_constraintHeight_max layout_constraintHeight_min layout_constraintHeight_percent layout_constraintHorizontal_bias layout_constraintHorizontal_chainStyle layout_constraintHorizontal_weight layout_constraintLeft_creator layout_constraintLeft_toLeftOf layout_constraintLeft_toRightOf layout_constraintRight_creator layout_constraintRight_toLeftOf layout_constraintRight_toRightOf layout_constraintStart_toEndOf layout_constraintStart_toStartOf layout_constraintTop_creator layout_constraintTop_toBottomOf layout_constraintTop_toTopOf layout_constraintVertical_bias layout_constraintVertical_chainStyle layout_constraintVertical_weight layout_constraintWidth_default layout_constraintWidth_max layout_constraintWidth_min layout_constraintWidth_percent layout_editor_absoluteX layout_editor_absoluteY layout_goneMarginBottom layout_goneMarginEnd layout_goneMarginLeft layout_goneMarginRight layout_goneMarginStart layout_goneMarginTop layout_optimizationLevel
 styleable ConstraintLayout_placeholder content emptyVisibility
 styleable ConstraintSet android_orientation android_id android_visibility android_layout_width android_layout_height android_layout_marginLeft android_layout_marginTop android_layout_marginRight android_layout_marginBottom android_maxWidth android_maxHeight android_minWidth android_minHeight android_alpha android_transformPivotX android_transformPivotY android_translationX android_translationY android_scaleX android_scaleY android_rotation android_rotationX android_rotationY android_layout_marginStart android_layout_marginEnd android_translationZ android_elevation barrierAllowsGoneWidgets barrierDirection chainUseRtl constraint_referenced_ids layout_constrainedHeight layout_constrainedWidth layout_constraintBaseline_creator layout_constraintBaseline_toBaselineOf layout_constraintBottom_creator layout_constraintBottom_toBottomOf layout_constraintBottom_toTopOf layout_constraintCircle layout_constraintCircleAngle layout_constraintCircleRadius layout_constraintDimensionRatio layout_constraintEnd_toEndOf layout_constraintEnd_toStartOf layout_constraintGuide_begin layout_constraintGuide_end layout_constraintGuide_percent layout_constraintHeight_default layout_constraintHeight_max layout_constraintHeight_min layout_constraintHeight_percent layout_constraintHorizontal_bias layout_constraintHorizontal_chainStyle layout_constraintHorizontal_weight layout_constraintLeft_creator layout_constraintLeft_toLeftOf layout_constraintLeft_toRightOf layout_constraintRight_creator layout_constraintRight_toLeftOf layout_constraintRight_toRightOf layout_constraintStart_toEndOf layout_constraintStart_toStartOf layout_constraintTop_creator layout_constraintTop_toBottomOf layout_constraintTop_toTopOf layout_constraintVertical_bias layout_constraintVertical_chainStyle layout_constraintVertical_weight layout_constraintWidth_default layout_constraintWidth_max layout_constraintWidth_min layout_constraintWidth_percent layout_editor_absoluteX layout_editor_absoluteY layout_goneMarginBottom layout_goneMarginEnd layout_goneMarginLeft layout_goneMarginRight layout_goneMarginStart layout_goneMarginTop
-styleable CoordinatorLayout keylines statusBarBackground
-styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchStrategy fontProviderFetchTimeout fontProviderPackage fontProviderQuery
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
-styleable GridLayout alignmentMode columnCount columnOrderPreserved orientation rowCount rowOrderPreserved useDefaultMargins
-styleable GridLayout_Layout android_layout_width android_layout_height android_layout_margin android_layout_marginLeft android_layout_marginTop android_layout_marginRight android_layout_marginBottom layout_column layout_columnSpan layout_columnWeight layout_gravity layout_row layout_rowSpan layout_rowWeight
 styleable LinearConstraintLayout android_orientation
 styleable LinearLayoutCompat android_gravity android_orientation android_baselineAligned android_baselineAlignedChildIndex android_weightSum divider dividerPadding measureWithLargestChild showDividers
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight

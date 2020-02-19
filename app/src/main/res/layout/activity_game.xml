@@ -5,10 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@drawable/voltorbflib_maindisplay"
+    android:background="@android:color/background_light"
     tools:context=".GameActivity">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
     <TableLayout
+        android:id="@+id/tableLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,12 +26,13 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <ImageButton
                 android:id="@+id/cell00"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
@@ -80,7 +89,7 @@
                 <TextView
                     android:id="@+id/row0NumSum"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="monospace"
                     android:gravity="center"
@@ -90,7 +99,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -98,7 +107,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ball" />
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/cell0" />
 
                     <TextView
                         android:id="@+id/row0BallSum"
@@ -115,12 +125,13 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <ImageButton
                 android:id="@+id/cell10"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
@@ -177,7 +188,7 @@
                 <TextView
                     android:id="@+id/row1NumSum"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="monospace"
                     android:gravity="center"
@@ -187,7 +198,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -195,7 +206,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ball" />
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/cell0" />
 
                     <TextView
                         android:id="@+id/row1BallSum"
@@ -212,12 +224,13 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <ImageButton
                 android:id="@+id/cell20"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
@@ -274,7 +287,7 @@
                 <TextView
                     android:id="@+id/row2NumSum"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="monospace"
                     android:gravity="center"
@@ -284,7 +297,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -292,7 +305,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ball" />
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/cell0" />
 
                     <TextView
                         android:id="@+id/row2BallSum"
@@ -309,12 +323,13 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <ImageButton
                 android:id="@+id/cell30"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
@@ -371,7 +386,7 @@
                 <TextView
                     android:id="@+id/row3NumSum"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="monospace"
                     android:gravity="center"
@@ -381,7 +396,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -389,7 +404,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ball" />
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/cell0" />
 
                     <TextView
                         android:id="@+id/row3BallSum"
@@ -406,12 +422,13 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <ImageButton
                 android:id="@+id/cell40"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
@@ -468,7 +485,7 @@
                 <TextView
                     android:id="@+id/row4NumSum"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="monospace"
                     android:gravity="center"
@@ -478,7 +495,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -486,7 +503,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ball" />
+                        android:scaleType="centerCrop"
+                        app:srcCompat="@drawable/cell0" />
 
                     <TextView
                         android:id="@+id/row4BallSum"
@@ -503,7 +521,8 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -515,7 +534,7 @@
                 <TextView
                     android:id="@+id/col0NumSum"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="monospace"
                     android:gravity="center"
@@ -525,7 +544,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -533,7 +552,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ball" />
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/cell0" />
 
                     <TextView
                         android:id="@+id/col0BallSum"
@@ -557,7 +577,7 @@
                 <TextView
                     android:id="@+id/col1NumSum"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="monospace"
                     android:gravity="center"
@@ -567,7 +587,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -575,7 +595,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ball" />
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/cell0" />
 
                     <TextView
                         android:id="@+id/col1BallSum"
@@ -599,7 +620,7 @@
                 <TextView
                     android:id="@+id/col2NumSum"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="monospace"
                     android:gravity="center"
@@ -609,7 +630,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -617,7 +638,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ball" />
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/cell0" />
 
                     <TextView
                         android:id="@+id/col2BallSum"
@@ -641,7 +663,7 @@
                 <TextView
                     android:id="@+id/col3NumSum"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="monospace"
                     android:gravity="center"
@@ -651,7 +673,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -659,7 +681,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ball" />
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/cell0" />
 
                     <TextView
                         android:id="@+id/col3BallSum"
@@ -683,7 +706,7 @@
                 <TextView
                     android:id="@+id/col4NumSum"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:fontFamily="monospace"
                     android:gravity="center"
@@ -693,7 +716,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -701,7 +724,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/ball" />
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/cell0" />
 
                     <TextView
                         android:id="@+id/col4BallSum"
@@ -716,7 +740,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
@@ -724,4 +748,59 @@
         </TableRow>
 
     </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="HIGH SCORE"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/highScoreText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="highScoreText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="YOUR SCORE"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/currentScoreText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="currentScoreText" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

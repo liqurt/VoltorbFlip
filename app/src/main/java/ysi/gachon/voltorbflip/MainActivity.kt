@@ -17,11 +17,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(gameIntent)
         }
 
-        howtoplay.setOnClickListener{
-            Toast.makeText(this,"미구현",Toast.LENGTH_SHORT).show()
-            finish()
-        }
-
         quit.setOnClickListener{
             Toast.makeText(this,"빠이",Toast.LENGTH_SHORT).show()
             finish()
