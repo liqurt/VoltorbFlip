@@ -28,12 +28,12 @@
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 18-->[androidx.core:core:1.2.0] C:\Users\Y190313\.gradle\caches\transforms-2\files-2.1\4cea45bd005ddf160f2992f5d484b3c7\core-1.2.0\AndroidManifest.xml:24:18-86
 19        android:debuggable="true"
-20        android:icon="@drawable/logo"
-20-->C:\Users\Y190313\Desktop\Apocrypha\Voltorb_Flip(Android)\app\src\main\AndroidManifest.xml:7:9-38
+20        android:icon="@drawable/logo512"
+20-->C:\Users\Y190313\Desktop\Apocrypha\Voltorb_Flip(Android)\app\src\main\AndroidManifest.xml:7:9-41
 21        android:label="@string/app_name"
 21-->C:\Users\Y190313\Desktop\Apocrypha\Voltorb_Flip(Android)\app\src\main\AndroidManifest.xml:8:9-41
-22        android:roundIcon="@drawable/logo"
-22-->C:\Users\Y190313\Desktop\Apocrypha\Voltorb_Flip(Android)\app\src\main\AndroidManifest.xml:9:9-43
+22        android:roundIcon="@drawable/logo512"
+22-->C:\Users\Y190313\Desktop\Apocrypha\Voltorb_Flip(Android)\app\src\main\AndroidManifest.xml:9:9-46
 23        android:supportsRtl="true"
 23-->C:\Users\Y190313\Desktop\Apocrypha\Voltorb_Flip(Android)\app\src\main\AndroidManifest.xml:10:9-35
 24        android:testOnly="true"

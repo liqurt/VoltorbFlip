@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">VoltorbFlip</string>
+    <string name="app_name">찌리리공 뒤집기</string>
     <string name="admob_app_id">ca-app-pub-7296582691331595~3912698153</string>
     <string name="banner_ad_unit_id">ca-app-pub-7296582691331595/9043952945</string>
     <string name="banner_ad_unit_id_for_test">ca-app-pub-3940256099942544/6300978111</string>

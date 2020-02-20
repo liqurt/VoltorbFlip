@@ -91,9 +91,9 @@ MERGED from [com.google.android.gms:play-services-ads-base:18.3.0] C:\Users\Y190
 	android:label
 		ADDED from C:\Users\Y190313\Desktop\Apocrypha\Voltorb_Flip(Android)\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from C:\Users\Y190313\Desktop\Apocrypha\Voltorb_Flip(Android)\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Users\Y190313\Desktop\Apocrypha\Voltorb_Flip(Android)\app\src\main\AndroidManifest.xml:9:9-46
 	android:icon
-		ADDED from C:\Users\Y190313\Desktop\Apocrypha\Voltorb_Flip(Android)\app\src\main\AndroidManifest.xml:7:9-38
+		ADDED from C:\Users\Y190313\Desktop\Apocrypha\Voltorb_Flip(Android)\app\src\main\AndroidManifest.xml:7:9-41
 	android:allowBackup
 		ADDED from C:\Users\Y190313\Desktop\Apocrypha\Voltorb_Flip(Android)\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
