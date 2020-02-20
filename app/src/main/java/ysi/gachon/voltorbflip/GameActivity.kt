@@ -37,7 +37,6 @@ class GameActivity : AppCompatActivity(), View.OnClickListener{
         var soundBGM3 : Int = 3
         var soundBGM4 : Int = 4
         var soundBGM5 : Int = 5
-        val soundBGMList : List<Int> = listOf(soundBGM0,soundBGM1,soundBGM2,soundBGM3,soundBGM4,soundBGM5)
     }
 
     var gameBoard = Array(5, {IntArray(5)})
@@ -63,7 +62,9 @@ class GameActivity : AppCompatActivity(), View.OnClickListener{
         soundBGM3 = soundPool.load(this, R.raw.pokemoncenter3, 1)
         soundBGM4 = soundPool.load(this, R.raw.pokemoncenter4, 1)
         soundBGM5 = soundPool.load(this, R.raw.pokemoncenter5, 1)
+    }
 
+    fun playBGM(){
         val playThis = stage%6
         when(playThis){
             0->bgmPlayer = MediaPlayer.create(this, R.raw.pokemoncenter0)
@@ -330,5 +331,14 @@ class GameActivity : AppCompatActivity(), View.OnClickListener{
         }
     }
 
+    override fun onResume() {
+        playBGM()
+        super.onResume()
+    }
+
+    override fun onPause() {
+        bgmPlayer.release()
+        super.onPause()
+    }
 
 }
